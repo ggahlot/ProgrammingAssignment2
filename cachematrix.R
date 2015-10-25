@@ -34,7 +34,7 @@ cacheSolve <- function(x, ...) {
         }
 		else {
         data <- x$get()
-        mat_INVERSE <- mean(data, ...)
+        mat_INVERSE <- inverse(data, ...)
         x$setmean(mat_INVERSE)
         mat_INVERSE
 	   	}
